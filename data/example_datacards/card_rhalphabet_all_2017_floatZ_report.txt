@@ -1,0 +1,27 @@
+=======sensitivity.py==========
+===ifile = ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/card_rhalphabet_all_2017_floatZ.root ==========
+===odir  =  ==========
+===mode  = MLfit,norm ==========
+===time  = 2019-07-13 22:15 ==========
+combine -M FitDiagnostics ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/card_rhalphabet_all_2017_floatZ.root  --robustFit 1 --setRobustFitAlgo Minuit2,Migrad --saveNormalizations  --setRobustFitTolerance  0.001 --setRobustFitStrategy 2 --saveShapes --saveWithUncertainties --saveWorkspace --setParameterRanges r=-10,10:r_z=-5,5 --redefineSignalPOIs r 
+mkdir -p ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/
+mv fitDiagnostics.root ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit.root
+mv higgsCombineTest.*.root ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/
+mkdir -p ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/prefit/
+python validateMLFit.py -i ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8 -o ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/prefit/ --fit prefit --lumi 41.1 --suffix 2017  --data 
+montage -density 500 -tile 3x0 -geometry 800x800 -border 10  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/prefit//mlfit_pass_cat*_prefit.png   ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/prefit//mlfit_pass_all_prefit.pdf
+rm  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/prefit//mlfit_pass_cat*_prefit.png 
+montage -density 500 -tile 3x0 -geometry 800x800 -border 10  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/prefit//mlfit_fail_cat*_prefit.png   ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/prefit//mlfit_fail_all_prefit.pdf
+rm  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/prefit//mlfit_fail_cat*_prefit.png 
+mkdir -p ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_b/
+python validateMLFit.py -i ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8 -o ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_b/ --fit fit_b --lumi 41.1 --suffix 2017  --data 
+montage -density 500 -tile 3x0 -geometry 800x800 -border 10  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_b//mlfit_pass_cat*_fit_b.png   ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_b//mlfit_pass_all_fit_b.pdf
+rm  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_b//mlfit_pass_cat*_fit_b.png 
+montage -density 500 -tile 3x0 -geometry 800x800 -border 10  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_b//mlfit_fail_cat*_fit_b.png   ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_b//mlfit_fail_all_fit_b.pdf
+rm  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_b//mlfit_fail_cat*_fit_b.png 
+mkdir -p ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_s/
+python validateMLFit.py -i ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8 -o ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_s/ --fit fit_s --lumi 41.1 --suffix 2017  --data 
+montage -density 500 -tile 3x0 -geometry 800x800 -border 10  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_s//mlfit_pass_cat*_fit_s.png   ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_s//mlfit_pass_all_fit_s.pdf
+rm  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_s//mlfit_pass_cat*_fit_s.png 
+montage -density 500 -tile 3x0 -geometry 800x800 -border 10  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_s//mlfit_fail_cat*_fit_s.png   ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_s//mlfit_fail_all_fit_s.pdf
+rm  ddb_Jun24_v2/ddb_M2_full/TF22_MC_muonCR_SFJul8/mlfit/fit_s//mlfit_fail_cat*_fit_s.png 
