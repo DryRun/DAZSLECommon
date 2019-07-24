@@ -1,0 +1,61 @@
+imax 2 number of channels
+jmax * number of processes minus 1
+kmax * number of nuisance parameters
+---------------
+shapes * pass_ggf_ptcat1 ws_ggf_ptcat1.root ws_pass_ggf_ptcat1:$PROCESS_pass_ggf_ptcat1 ws_pass_ggf_ptcat1:$PROCESS_pass_ggf_ptcat1_$SYSTEMATIC
+shapes qcd pass_ggf_ptcat1 ws_ggf_ptcat1.root ws_pass_ggf_ptcat1:$PROCESS_pass_ggf_ptcat1
+shapes * fail_ggf_ptcat1 ws_ggf_ptcat1.root ws_fail_ggf_ptcat1:$PROCESS_fail_ggf_ptcat1 ws_fail_ggf_ptcat1:$PROCESS_fail_ggf_ptcat1_$SYSTEMATIC
+shapes qcd fail_ggf_ptcat1 ws_ggf_ptcat1.root ws_fail_ggf_ptcat1:$PROCESS_fail_ggf_ptcat1
+---------------
+bin pass_ggf_ptcat1 fail_ggf_ptcat1
+observation -1.0 -1.0
+---------------
+bin  pass_ggf_ptcat1 pass_ggf_ptcat1 pass_ggf_ptcat1 pass_ggf_ptcat1 pass_ggf_ptcat1 pass_ggf_ptcat1 pass_ggf_ptcat1 pass_ggf_ptcat1 pass_ggf_ptcat1  fail_ggf_ptcat1 fail_ggf_ptcat1 fail_ggf_ptcat1 fail_ggf_ptcat1 fail_ggf_ptcat1 fail_ggf_ptcat1 fail_ggf_ptcat1 fail_ggf_ptcat1 fail_ggf_ptcat1
+process hqq125 tthqq125 vbfhqq125 whqq125 zhqq125 qcd tqq zqq wqq hqq125 tthqq125 vbfhqq125 whqq125 zhqq125 qcd tqq zqq wqq
+process  -4 -3 -2 -1 0 1 2 3 4 -4 -3 -2 -1 0 1 2 3 4
+rate  -1 -1 -1 -1 -1 1.0 -1 -1 -1 -1 -1 -1 -1 -1 1.0 -1 -1 -1
+---------------
+tfcoeff_x0_y0_ggf flatParam
+tfcoeff_x0_y1_ggf flatParam
+tfcoeff_x1_y0_ggf flatParam
+tfcoeff_x1_y1_ggf flatParam
+tfcoeff_x2_y0_ggf flatParam
+tfcoeff_x2_y1_ggf flatParam
+qcd_fail_ggf_ptcat1_xbin1 flatParam
+qcd_fail_ggf_ptcat1_xbin2 flatParam
+qcd_fail_ggf_ptcat1_xbin3 flatParam
+qcd_fail_ggf_ptcat1_xbin4 flatParam
+qcd_fail_ggf_ptcat1_xbin5 flatParam
+qcd_fail_ggf_ptcat1_xbin6 flatParam
+qcd_fail_ggf_ptcat1_xbin7 flatParam
+qcd_fail_ggf_ptcat1_xbin8 flatParam
+qcd_fail_ggf_ptcat1_xbin9 flatParam
+qcd_fail_ggf_ptcat1_xbin10 flatParam
+qcd_fail_ggf_ptcat1_xbin11 flatParam
+qcd_fail_ggf_ptcat1_xbin12 flatParam
+qcd_fail_ggf_ptcat1_xbin13 flatParam
+qcd_fail_ggf_ptcat1_xbin14 flatParam
+qcd_fail_ggf_ptcat1_xbin15 flatParam
+qcd_fail_ggf_ptcat1_xbin16 flatParam
+qcd_fail_ggf_ptcat1_xbin17 flatParam
+qcd_fail_ggf_ptcat1_xbin18 flatParam
+qcd_fail_ggf_ptcat1_xbin19 flatParam
+qcd_fail_ggf_ptcat1_xbin20 flatParam
+qcd_fail_ggf_ptcat1_xbin21 flatParam
+qcd_fail_ggf_ptcat1_xbin22 flatParam
+qcd_fail_ggf_ptcat1_xbin23 flatParam
+JER lnN  1.03276676586 2.10117992408 1.02541098966 1.11029966286 1.49496917467 - 1.02867097536 1.17416973158 1.61119295327 1.0761169431 1.85579958745 1.04497886093 1.06628817815 1.36785204624 - 1.91949091111 1.8968191967 1.98163299758
+JES lnN  1.03276676586 2.10117992408 1.02541098966 1.11029966286 1.49496917467 - 1.02867097536 1.17416973158 1.61119295327 1.0761169431 1.85579958745 1.04497886093 1.06628817815 1.36785204624 - 1.91949091111 1.8968191967 1.98163299758
+hqq125pt lnN  1.3 - - - - - - - - 1.3 - - - - - - - -
+znormQ lnN  - - - - - - - 1.1 1.1 - - - - - - - 1.1 1.1
+wznormEW lnN  - - - - - - - 1.05 1.05 - - - - - - - 1.05 1.05
+Pu lnN  1.03276676586 2.10117992408 1.02541098966 1.11029966286 1.49496917467 - 1.02867097536 1.17416973158 1.61119295327 1.0761169431 1.85579958745 1.04497886093 1.06628817815 1.36785204624 - 1.91949091111 1.8968191967 1.98163299758
+eleveto lnN  1.005 1.005 1.005 1.005 1.005 - 1.005 1.005 1.005 1.005 1.005 1.005 1.005 1.005 - 1.005 1.005 1.005
+beff lnN  1.03296703297 1.03296703297 1.03296703297 1.03296703297 1.03296703297 - - 1.03296703297 1.03296703297 0.965649182456 0.970882928454 0.966403858643 0.968339756646 0.96983615163 - - 0.997103004061 0.999624188045
+trigger lnN  1.03276676586 2.10117992408 1.02541098966 1.11029966286 1.49496917467 - 1.02867097536 1.17416973158 1.61119295327 1.0761169431 1.85579958745 1.04497886093 1.06628817815 1.36785204624 - 1.91949091111 1.8968191967 1.98163299758
+lumi lnN  1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025
+muveto lnN  1.005 1.005 1.005 1.005 1.005 - 1.005 1.005 1.005 1.005 1.005 1.005 1.005 1.005 - 1.005 1.005 1.005
+veff lnN  1.043 1.043 1.043 1.043 1.043 - - 1.043 1.043 1.043 1.043 1.043 1.043 1.043 - - 1.043 1.043
+znormEW lnN  - - - - - - - 1.15 1.15 - - - - - - - 1.15 1.15
+mass_scale shape  0.1 0.1 0.1 0.1 0.1 - - 0.1 0.1 0.1 0.1 0.1 0.1 0.1 - - 0.1 0.1
+mass_smear shape  0.5 0.5 0.5 0.5 0.5 - - 0.5 0.5 0.5 0.5 0.5 0.5 0.5 - - 0.5 0.5

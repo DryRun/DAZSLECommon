@@ -1,0 +1,103 @@
+Combination of datacard.tpl
+imax 2 number of bins
+jmax * number of processes minus 1
+kmax * number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes * fail_cat6 base.root w_fail_cat6:$PROCESS_fail_cat6 w_fail_cat6:$PROCESS_fail_cat6_$SYSTEMATIC
+shapes qcd fail_cat6 rhalphabase.root w_fail_cat6:$PROCESS_fail_cat6_2017
+shapes * pass_cat6 base.root w_pass_cat6:$PROCESS_pass_cat6 w_pass_cat6:$PROCESS_pass_cat6_$SYSTEMATIC
+shapes qcd pass_cat6 rhalphabase.root w_pass_cat6:$PROCESS_pass_cat6_2017
+----------------------------------------------------------------------------------------------------------------------------------
+bin pass_cat6 fail_cat6
+observation -1.0 -1.0
+----------------------------------------------------------------------------------------------------------------------------------
+bin pass_cat6 pass_cat6 pass_cat6 pass_cat6 pass_cat6 pass_cat6 pass_cat6 pass_cat6 pass_cat6 fail_cat6 fail_cat6 fail_cat6 fail_cat6 fail_cat6 fail_cat6 fail_cat6 fail_cat6 fail_cat6
+process tthqq125 whqq125 hqq125 zhqq125 vbfhqq125 zqq wqq qcd tqq tthqq125 whqq125 hqq125 zhqq125 vbfhqq125 zqq wqq qcd tqq
+process -4 -3 -2 -1 0 1 2 3 4 -4 -3 -2 -1 0 1 2 3 4
+rate -1 -1 -1 -1 -1 -1 -1 1.0 -1 -1 -1 -1 -1 -1 -1 -1 1.0 -1
+----------------------------------------------------------------------------------------------------------------------------------
+lumi_2017 lnN 1.023 1.023 1.023 1.023 1.023 1.023 1.023 - 1.023 1.023 1.023 1.023 1.023 1.023 1.023 1.023 - 1.023
+hqq125pt_2017 lnN - - 1.30 - - - - - - - - 1.30 - - - - - -
+hqq125ptShape shape - - 1 - - - - - - - - 1 - - - - - -
+#CMS_eff_v lnN 1.2 1.2 1.2 1.2 1.2 1.2 1.2 - - 1.2 1.2 1.2 1.2 1.2 1.2 1.2 - -
+#CMS_eff_bb lnN 1.1 1.1 1.1 1.1 1.1 - - - - 1.1 1.1 1.1 1.1 1.1 - - - -
+veff_2017 lnN 1.020 1.020 1.020 1.020 1.020 1.020 1.020 - - 1.020 1.020 1.020 1.020 1.020 1.020 1.020 - -
+bbeff_2017 lnN 1.300 1.300 1.300 1.300 1.300 1.300 - - - 0.895 0.787 0.446 0.764 0.476 0.979 - - -
+znormQ lnN - - - - - 1.1 1.1 - - - - - - - 1.1 1.1 - -
+#znormQ lnN - - - - - 1.1 - - - - - - - - 1.1 - - -
+#wnormQ lnN - - - - - - 1.1 - - - - - - - - 1.1 - -
+#znormEW lnN - - - - - 1.15 1.15 - - - - - - - 1.15 1.15 - -
+#wznormEW lnN - - - - - - 1.05 - - - - - - - - 1.05 - -
+znormEW lnN - - - - - 1.07 1.07 - - - - - - - 1.07 1.07 - -
+wznormEW lnN - - - - - - 1.06 - - - - - - - - 1.06 - -
+wznormEW lnN - - - - - - 1.06 - - - - - - - - 1.06 - -
+JER_2017 lnN 1.048 1.021 1.000 1.117 1.059 1.036 1.034 - 1.032 1.027 1.064 1.041 1.000 1.112 1.028 1.034 - 1.042
+JES_2017 lnN 1.043 1.000 1.000 1.080 1.010 1.030 1.040 - 1.032 1.019 1.034 1.036 1.063 1.067 1.034 1.034 - 1.032
+Pu_2017 lnN 1.007 1.035 1.080 1.113 1.004 1.016 1.027 - 1.017 1.015 1.008 1.015 1.037 1.032 1.014 1.018 - 1.027
+#trigger shape 1 1 1 1 1 1 1 - 1 1 1 1 1 1 1 1 - 1
+trigger lnN 1.02 1.02 1.02 1.02 1.02 1.02 1.02 - 1.02 1.02 1.02 1.02 1.02 1.02 1.02 1.02 - 1.02
+muveto lnN 1.005 1.005 1.005 1.005 1.005 1.005 1.005 - 1.005 1.005 1.005 1.005 1.005 1.005 1.005 1.005 - 1.005
+eleveto lnN 1.005 1.005 1.005 1.005 1.005 1.005 1.005 - 1.005 1.005 1.005 1.005 1.005 1.005 1.005 1.005 - 1.005
+scale_2017 shape 0.210 0.210 0.210 0.210 0.210 0.153 0.135 - - 0.210 0.210 0.210 0.210 0.210 0.153 0.135 - -
+scalept_2017 shape 0.734 0.734 0.734 0.734 0.734 0.535 0.472 - - 0.734 0.734 0.734 0.734 0.734 0.535 0.472 - -
+smear_2017 shape 0.25 0.25 0.25 0.25 0.25 0.25 0.25 - - 0.25 0.25 0.25 0.25 0.25 0.25 0.25 - -
+#smear_2017 shape 0.5 0.5 0.5 0.5 0.5 0.5 0.5 - - 0.5 0.5 0.5 0.5 0.5 0.5 0.5 - -
+tqqpasscat6_2017norm rateParam pass_cat6 tqq (@0*@1) tqqnormSF_2017,tqqeffSF_2017
+tqqfailcat6_2017norm rateParam fail_cat6 tqq (@0*(1.0-@1*0.1060)/(1.0-0.1060)) tqqnormSF_2017,tqqeffSF_2017
+#tqqfailcat6_2017norm rateParam fail_cat6 tqq (@0*(1.0-@1*5.523909e-02)/(1.0-5.523909e-02)) tqqnormSF_2017,tqqeffSF_2017
+tqqnormSF_2017 extArg 1.0 [0.0,10.0]
+tqqeffSF_2017 extArg 1.0 [0.0,10.0]
+#hbb rateParam 	    * tthqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_br_yr4.root:br
+#hbb rateParam 	    * whqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_br_yr4.root:br
+#hbb rateParam 	    * hqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_br_yr4.root:br
+#hbb rateParam 	    * zhqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_br_yr4.root:br
+#hbb rateParam 	    * vbfhqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_br_yr4.root:br
+#ttH_13TeV rateParam * tthqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_yr4_13TeV.root:xs_13TeV
+#WH_13TeV rateParam * whqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_yr4_13TeV.root:xs_13TeV
+#ggH_13TeV rateParam * hqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_yr4_13TeV.root:xs_13TeV
+#ZH_13TeV rateParam * zhqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_yr4_13TeV.root:xs_13TeV
+#vbfH_13TeV rateParam * vbfhqq125 $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/data/lhc-hxswg/sm/sm_yr4_13TeV.root:xs_13TeV
+tthqq125passcat62017mcstat lnN	1.122	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+whqq125passcat62017mcstat lnN	-	1.287	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+hqq125passcat62017mcstat lnN	-	-	1.206	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+zhqq125passcat62017mcstat lnN	-	-	-	1.681	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+vbfhqq125passcat62017mcstat lnN	-	-	-	-	1.152	-	-	-	-	-	-	-	-	-	-	-	-	-
+zqqpasscat62017mcstat lnN	-	-	-	-	-	1.027	-	-	-	-	-	-	-	-	-	-	-	-
+wqqpasscat62017mcstat lnN	-	-	-	-	-	-	1.040	-	-	-	-	-	-	-	-	-	-	-
+tqqpasscat62017mcstat lnN	-	-	-	-	-	-	-	-	1.078	-	-	-	-	-	-	-	-	-
+tthqq125failcat62017mcstat lnN	-	-	-	-	-	-	-	-	-	1.069	-	-	-	-	-	-	-	-
+whqq125failcat62017mcstat lnN	-	-	-	-	-	-	-	-	-	-	1.257	-	-	-	-	-	-	-
+hqq125failcat62017mcstat lnN	-	-	-	-	-	-	-	-	-	-	-	1.270	-	-	-	-	-	-
+zhqq125failcat62017mcstat lnN	-	-	-	-	-	-	-	-	-	-	-	-	1.341	-	-	-	-	-
+vbfhqq125failcat62017mcstat lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	1.255	-	-	-	-
+zqqfailcat62017mcstat lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.010	-	-	-
+wqqfailcat62017mcstat lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.009	-	-
+tqqfailcat62017mcstat lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.028
+qcd_fail_cat6_Bin2_2017 flatParam 
+qcd_fail_cat6_Bin3_2017 flatParam 
+qcd_fail_cat6_Bin4_2017 flatParam 
+qcd_fail_cat6_Bin5_2017 flatParam 
+qcd_fail_cat6_Bin6_2017 flatParam 
+qcd_fail_cat6_Bin7_2017 flatParam 
+qcd_fail_cat6_Bin8_2017 flatParam 
+qcd_fail_cat6_Bin9_2017 flatParam 
+qcd_fail_cat6_Bin10_2017 flatParam 
+qcd_fail_cat6_Bin11_2017 flatParam 
+qcd_fail_cat6_Bin12_2017 flatParam 
+qcd_fail_cat6_Bin13_2017 flatParam 
+qcd_fail_cat6_Bin14_2017 flatParam 
+qcd_fail_cat6_Bin15_2017 flatParam 
+qcd_fail_cat6_Bin16_2017 flatParam 
+qcd_fail_cat6_Bin17_2017 flatParam 
+qcd_fail_cat6_Bin18_2017 flatParam 
+qcd_fail_cat6_Bin19_2017 flatParam 
+qcd_fail_cat6_Bin20_2017 flatParam 
+qcd_fail_cat6_Bin21_2017 flatParam 
+qcd_fail_cat6_Bin22_2017 flatParam 
+qcd_fail_cat6_Bin23_2017 flatParam 
+p0r0_2017 flatParam 
+p0r1_2017 flatParam 
+p0r2_2017 flatParam 
+p1r0_2017 flatParam 
+p1r1_2017 flatParam 
+p1r2_2017 flatParam 

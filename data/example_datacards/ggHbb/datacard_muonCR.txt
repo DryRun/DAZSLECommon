@@ -1,0 +1,55 @@
+imax 2 number of channels
+jmax * number of processes minus 1
+kmax * number of nuisance parameters
+------------------------------------------------------------
+bin fail_muonCR pass_muonCR
+observation 1887.000 143.000
+------------------------------------------------------------
+shapes * pass_muonCR datacard_muonCR.root w_muonCR:$PROCESS_pass w_muonCR:$PROCESS_pass_$SYSTEMATIC
+shapes * fail_muonCR datacard_muonCR.root w_muonCR:$PROCESS_fail w_muonCR:$PROCESS_fail_$SYSTEMATIC
+------------------------------------------------------------
+bin	pass_muonCR	pass_muonCR	pass_muonCR	pass_muonCR	pass_muonCR	pass_muonCR	pass_muonCR	pass_muonCR	pass_muonCR	pass_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR	fail_muonCR
+process	tthqq125	whqq125	zhqq125	zqq	wqq	qcd	tqq	stqq	wlnu	zll	tthqq125	whqq125	hqq125	zhqq125	vbfhqq125	zqq	wqq	qcd	tqq	vvqq	stqq	wlnu	zll
+process	-4	-3	-1	1	2	3	4	6	7	8	-4	-3	-2	-1	0	1	2	3	4	5	6	7	8
+rate	0.671	0.000	0.016	1.132	0.502	30.316	175.009	9.184	1.260	0.165	2.279	0.137	0.152	0.052	0.021	12.048	8.364	506.343	1581.817	4.431	147.195	81.942	10.088
+------------------------------------------------------------
+lumi_2017	lnN	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023	1.023
+hqq125pt	lnN	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.300	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000
+veff_2017	lnN	1.020	1.020	1.020	1.020	1.020	1.000	1.000	1.000	1.000	1.000	1.020	1.020	1.020	1.020	1.020	1.020	1.020	1.000	1.000	1.000	1.000	1.000	1.000
+bbeff_2017	lnN	1.300	1.300	1.300	1.300	1.300	1.000	1.000	1.000	1.000	1.000	0.912	0.999	1.000	0.906	1.000	0.972	0.982	1.000	1.000	1.000	1.000	1.000	1.000
+znormEW	lnN	1.000	1.000	1.000	1.150	1.150	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.150	1.150	1.000	1.000	1.000	1.000	1.000	1.000
+znormQ	lnN	1.000	1.000	1.000	1.100	1.100	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.100	1.100	1.000	1.000	1.000	1.000	1.000	1.000
+wznormEW	lnN	1.000	1.000	1.000	1.000	1.050	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.050	1.000	1.000	1.000	1.000	1.000	1.000
+mutrigger	shape	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000
+muid	shape	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000
+muiso	shape	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000
+JES_2017	lnN	1.011	1.000	1.000	1.000	1.000	1.079	1.025	1.000	1.101	1.001	1.014	1.000	1.000	1.055	1.000	1.024	1.063	1.056	1.018	1.036	1.013	1.017	1.008
+JER_2017	lnN	1.002	1.000	1.000	1.133	1.000	1.000	1.004	1.000	1.085	1.001	1.001	1.000	1.000	1.055	1.000	1.014	1.026	1.012	1.002	1.000	1.004	1.005	1.002
+Pu_2017	lnN	1.015	2.778	1.047	1.028	1.009	1.007	1.008	1.002	1.032	1.048	1.002	1.030	1.077	1.302	1.015	1.043	1.031	1.032	1.001	1.057	1.002	1.010	1.003
+tthqq125passmuonCR2017mcstat	lnN	1.052	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+tthqq125failmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	1.028	-	-	-	-	-	-	-	-	-	-	-	-
+whqq125passmuonCR2017mcstat	lnN	-	2.000	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+whqq125failmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	1.537	-	-	-	-	-	-	-	-	-	-	-
+hqq125failmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	1.866	-	-	-	-	-	-	-	-	-	-
+zhqq125passmuonCR2017mcstat	lnN	-	-	1.987	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+zhqq125failmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	1.790	-	-	-	-	-	-	-	-	-
+vbfhqq125failmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	2.000	-	-	-	-	-	-	-	-
+zqqpassmuonCR2017mcstat	lnN	-	-	-	1.285	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+zqqfailmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.100	-	-	-	-	-	-	-
+wqqpassmuonCR2017mcstat	lnN	-	-	-	-	1.608	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+wqqfailmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.155	-	-	-	-	-	-
+qcdpassmuonCR2017mcstat	lnN	-	-	-	-	-	1.359	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+qcdfailmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.092	-	-	-	-	-
+tqqpassmuonCR2017mcstat	lnN	-	-	-	-	-	-	1.048	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+tqqfailmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.016	-	-	-	-
+vvqqfailmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.305	-	-	-
+stqqpassmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	1.195	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+stqqfailmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.047	-	-
+wlnupassmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	1.175	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+wlnufailmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.023	-
+zllpassmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	1.297	-	-	-	-	-	-	-	-	-	-	-	-	-
+zllfailmuonCR2017mcstat	lnN	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1.037
+tqqpassmuonCR2017norm rateParam pass_muonCR tqq (@0*@1) tqqnormSF_2017,tqqeffSF_2017
+tqqfailmuonCR2017norm rateParam fail_muonCR tqq (@0*(1.0-@1*0.0996)/(1.0-0.0996)) tqqnormSF_2017,tqqeffSF_2017
+tqqnormSF_2017 extArg 1.0 [0.0,10.0]
+tqqeffSF_2017 extArg 1.0 [0.0,10.0]

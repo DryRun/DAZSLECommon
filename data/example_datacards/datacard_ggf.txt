@@ -1,0 +1,182 @@
+Combination of ggf_ptcat1=datacard_ggf_ptcat1.txt  ggf_ptcat2=datacard_ggf_ptcat2.txt  ggf_ptcat3=datacard_ggf_ptcat3.txt  ggf_ptcat4=datacard_ggf_ptcat4.txt  ggf_ptcat5=datacard_ggf_ptcat5.txt  ggf_ptcat6=datacard_ggf_ptcat6.txt
+imax 12 number of bins
+jmax 8 number of processes minus 1
+kmax 0 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *                           ggf_ptcat1_fail_ggf_ptcat1  ws_ggf_ptcat1.root ws_fail_ggf_ptcat1:$PROCESS_fail_ggf_ptcat1 ws_fail_ggf_ptcat1:$PROCESS_fail_ggf_ptcat1_$SYSTEMATIC
+shapes qcd                         ggf_ptcat1_fail_ggf_ptcat1  ws_ggf_ptcat1.root ws_fail_ggf_ptcat1:$PROCESS_fail_ggf_ptcat1
+shapes *                           ggf_ptcat1_pass_ggf_ptcat1  ws_ggf_ptcat1.root ws_pass_ggf_ptcat1:$PROCESS_pass_ggf_ptcat1 ws_pass_ggf_ptcat1:$PROCESS_pass_ggf_ptcat1_$SYSTEMATIC
+shapes qcd                         ggf_ptcat1_pass_ggf_ptcat1  ws_ggf_ptcat1.root ws_pass_ggf_ptcat1:$PROCESS_pass_ggf_ptcat1
+shapes *                           ggf_ptcat2_fail_ggf_ptcat2  ws_ggf_ptcat2.root ws_fail_ggf_ptcat2:$PROCESS_fail_ggf_ptcat2 ws_fail_ggf_ptcat2:$PROCESS_fail_ggf_ptcat2_$SYSTEMATIC
+shapes qcd                         ggf_ptcat2_fail_ggf_ptcat2  ws_ggf_ptcat2.root ws_fail_ggf_ptcat2:$PROCESS_fail_ggf_ptcat2
+shapes *                           ggf_ptcat2_pass_ggf_ptcat2  ws_ggf_ptcat2.root ws_pass_ggf_ptcat2:$PROCESS_pass_ggf_ptcat2 ws_pass_ggf_ptcat2:$PROCESS_pass_ggf_ptcat2_$SYSTEMATIC
+shapes qcd                         ggf_ptcat2_pass_ggf_ptcat2  ws_ggf_ptcat2.root ws_pass_ggf_ptcat2:$PROCESS_pass_ggf_ptcat2
+shapes *                           ggf_ptcat3_fail_ggf_ptcat3  ws_ggf_ptcat3.root ws_fail_ggf_ptcat3:$PROCESS_fail_ggf_ptcat3 ws_fail_ggf_ptcat3:$PROCESS_fail_ggf_ptcat3_$SYSTEMATIC
+shapes qcd                         ggf_ptcat3_fail_ggf_ptcat3  ws_ggf_ptcat3.root ws_fail_ggf_ptcat3:$PROCESS_fail_ggf_ptcat3
+shapes *                           ggf_ptcat3_pass_ggf_ptcat3  ws_ggf_ptcat3.root ws_pass_ggf_ptcat3:$PROCESS_pass_ggf_ptcat3 ws_pass_ggf_ptcat3:$PROCESS_pass_ggf_ptcat3_$SYSTEMATIC
+shapes qcd                         ggf_ptcat3_pass_ggf_ptcat3  ws_ggf_ptcat3.root ws_pass_ggf_ptcat3:$PROCESS_pass_ggf_ptcat3
+shapes *                           ggf_ptcat4_fail_ggf_ptcat4  ws_ggf_ptcat4.root ws_fail_ggf_ptcat4:$PROCESS_fail_ggf_ptcat4 ws_fail_ggf_ptcat4:$PROCESS_fail_ggf_ptcat4_$SYSTEMATIC
+shapes qcd                         ggf_ptcat4_fail_ggf_ptcat4  ws_ggf_ptcat4.root ws_fail_ggf_ptcat4:$PROCESS_fail_ggf_ptcat4
+shapes *                           ggf_ptcat4_pass_ggf_ptcat4  ws_ggf_ptcat4.root ws_pass_ggf_ptcat4:$PROCESS_pass_ggf_ptcat4 ws_pass_ggf_ptcat4:$PROCESS_pass_ggf_ptcat4_$SYSTEMATIC
+shapes qcd                         ggf_ptcat4_pass_ggf_ptcat4  ws_ggf_ptcat4.root ws_pass_ggf_ptcat4:$PROCESS_pass_ggf_ptcat4
+shapes *                           ggf_ptcat5_fail_ggf_ptcat5  ws_ggf_ptcat5.root ws_fail_ggf_ptcat5:$PROCESS_fail_ggf_ptcat5 ws_fail_ggf_ptcat5:$PROCESS_fail_ggf_ptcat5_$SYSTEMATIC
+shapes qcd                         ggf_ptcat5_fail_ggf_ptcat5  ws_ggf_ptcat5.root ws_fail_ggf_ptcat5:$PROCESS_fail_ggf_ptcat5
+shapes *                           ggf_ptcat5_pass_ggf_ptcat5  ws_ggf_ptcat5.root ws_pass_ggf_ptcat5:$PROCESS_pass_ggf_ptcat5 ws_pass_ggf_ptcat5:$PROCESS_pass_ggf_ptcat5_$SYSTEMATIC
+shapes qcd                         ggf_ptcat5_pass_ggf_ptcat5  ws_ggf_ptcat5.root ws_pass_ggf_ptcat5:$PROCESS_pass_ggf_ptcat5
+shapes *                           ggf_ptcat6_fail_ggf_ptcat6  ws_ggf_ptcat6.root ws_fail_ggf_ptcat6:$PROCESS_fail_ggf_ptcat6 ws_fail_ggf_ptcat6:$PROCESS_fail_ggf_ptcat6_$SYSTEMATIC
+shapes qcd                         ggf_ptcat6_fail_ggf_ptcat6  ws_ggf_ptcat6.root ws_fail_ggf_ptcat6:$PROCESS_fail_ggf_ptcat6
+shapes *                           ggf_ptcat6_pass_ggf_ptcat6  ws_ggf_ptcat6.root ws_pass_ggf_ptcat6:$PROCESS_pass_ggf_ptcat6 ws_pass_ggf_ptcat6:$PROCESS_pass_ggf_ptcat6_$SYSTEMATIC
+shapes qcd                         ggf_ptcat6_pass_ggf_ptcat6  ws_ggf_ptcat6.root ws_pass_ggf_ptcat6:$PROCESS_pass_ggf_ptcat6
+----------------------------------------------------------------------------------------------------------------------------------
+bin          ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6
+observation  -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                        
+----------------------------------------------------------------------------------------------------------------------------------
+bin          ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_pass_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat1_fail_ggf_ptcat1  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_pass_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat2_fail_ggf_ptcat2  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_pass_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat3_fail_ggf_ptcat3  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_pass_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat4_fail_ggf_ptcat4  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_pass_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat5_fail_ggf_ptcat5  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_pass_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6  ggf_ptcat6_fail_ggf_ptcat6
+process      tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                         tthqq125                    whqq125                     hqq125                      zhqq125                     vbfhqq125                   wqq                         zqq                         tqq                         qcd                       
+process      -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                           -4                          -3                          -2                          -1                          0                           1                           2                           3                           4                         
+rate         -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                           -1                          -1                          -1                          -1                          -1                          -1                          -1                          -1                          1                         
+----------------------------------------------------------------------------------------------------------------------------------
+qcd_fail_ggf_ptcat3_xbin19  flatParam
+qcd_fail_ggf_ptcat3_xbin18  flatParam
+qcd_fail_ggf_ptcat3_xbin17  flatParam
+qcd_fail_ggf_ptcat3_xbin16  flatParam
+qcd_fail_ggf_ptcat3_xbin15  flatParam
+qcd_fail_ggf_ptcat3_xbin14  flatParam
+qcd_fail_ggf_ptcat3_xbin13  flatParam
+qcd_fail_ggf_ptcat3_xbin12  flatParam
+qcd_fail_ggf_ptcat3_xbin11  flatParam
+qcd_fail_ggf_ptcat3_xbin10  flatParam
+qcd_fail_ggf_ptcat6_xbin16  flatParam
+qcd_fail_ggf_ptcat6_xbin21  flatParam
+qcd_fail_ggf_ptcat6_xbin20  flatParam
+qcd_fail_ggf_ptcat6_xbin23  flatParam
+qcd_fail_ggf_ptcat6_xbin22  flatParam
+qcd_fail_ggf_ptcat5_xbin19  flatParam
+qcd_fail_ggf_ptcat5_xbin18  flatParam
+qcd_fail_ggf_ptcat5_xbin15  flatParam
+qcd_fail_ggf_ptcat5_xbin14  flatParam
+qcd_fail_ggf_ptcat5_xbin17  flatParam
+qcd_fail_ggf_ptcat5_xbin16  flatParam
+qcd_fail_ggf_ptcat5_xbin11  flatParam
+qcd_fail_ggf_ptcat5_xbin10  flatParam
+qcd_fail_ggf_ptcat5_xbin13  flatParam
+qcd_fail_ggf_ptcat5_xbin12  flatParam
+qcd_fail_ggf_ptcat6_xbin17  flatParam
+qcd_fail_ggf_ptcat1_xbin22  flatParam
+qcd_fail_ggf_ptcat1_xbin23  flatParam
+poly_coeff_x2_y0_ggf  flatParam
+qcd_fail_ggf_ptcat1_xbin9  flatParam
+qcd_fail_ggf_ptcat1_xbin8  flatParam
+qcd_fail_ggf_ptcat5_xbin21  flatParam
+qcd_fail_ggf_ptcat1_xbin1  flatParam
+qcd_fail_ggf_ptcat1_xbin3  flatParam
+qcd_fail_ggf_ptcat1_xbin2  flatParam
+qcd_fail_ggf_ptcat1_xbin5  flatParam
+qcd_fail_ggf_ptcat1_xbin4  flatParam
+qcd_fail_ggf_ptcat1_xbin7  flatParam
+qcd_fail_ggf_ptcat1_xbin6  flatParam
+qcd_fail_ggf_ptcat5_xbin23  flatParam
+qcd_fail_ggf_ptcat4_xbin18  flatParam
+qcd_fail_ggf_ptcat4_xbin19  flatParam
+qcd_fail_ggf_ptcat4_xbin16  flatParam
+qcd_fail_ggf_ptcat4_xbin17  flatParam
+qcd_fail_ggf_ptcat4_xbin14  flatParam
+qcd_fail_ggf_ptcat4_xbin15  flatParam
+qcd_fail_ggf_ptcat4_xbin12  flatParam
+qcd_fail_ggf_ptcat4_xbin13  flatParam
+qcd_fail_ggf_ptcat4_xbin10  flatParam
+poly_coeff_x1_y0_ggf  flatParam
+qcd_fail_ggf_ptcat4_xbin4  flatParam
+qcd_fail_ggf_ptcat4_xbin5  flatParam
+qcd_fail_ggf_ptcat4_xbin6  flatParam
+qcd_fail_ggf_ptcat4_xbin7  flatParam
+qcd_fail_ggf_ptcat6_xbin10  flatParam
+qcd_fail_ggf_ptcat4_xbin1  flatParam
+qcd_fail_ggf_ptcat4_xbin2  flatParam
+qcd_fail_ggf_ptcat4_xbin3  flatParam
+qcd_fail_ggf_ptcat5_xbin20  flatParam
+qcd_fail_ggf_ptcat6_xbin13  flatParam
+qcd_fail_ggf_ptcat4_xbin8  flatParam
+qcd_fail_ggf_ptcat4_xbin9  flatParam
+qcd_fail_ggf_ptcat6_xbin11  flatParam
+qcd_fail_ggf_ptcat6_xbin2  flatParam
+qcd_fail_ggf_ptcat6_xbin3  flatParam
+qcd_fail_ggf_ptcat6_xbin1  flatParam
+qcd_fail_ggf_ptcat6_xbin6  flatParam
+qcd_fail_ggf_ptcat6_xbin7  flatParam
+qcd_fail_ggf_ptcat6_xbin4  flatParam
+qcd_fail_ggf_ptcat6_xbin5  flatParam
+qcd_fail_ggf_ptcat6_xbin18  flatParam
+qcd_fail_ggf_ptcat6_xbin8  flatParam
+qcd_fail_ggf_ptcat6_xbin9  flatParam
+qcd_fail_ggf_ptcat6_xbin12  flatParam
+qcd_fail_ggf_ptcat6_xbin19  flatParam
+qcd_fail_ggf_ptcat5_xbin22  flatParam
+poly_coeff_x0_y0_ggf  flatParam
+qcd_fail_ggf_ptcat4_xbin11  flatParam
+poly_coeff_x1_y1_ggf  flatParam
+qcd_fail_ggf_ptcat5_xbin5  flatParam
+qcd_fail_ggf_ptcat5_xbin4  flatParam
+qcd_fail_ggf_ptcat5_xbin7  flatParam
+qcd_fail_ggf_ptcat5_xbin6  flatParam
+qcd_fail_ggf_ptcat5_xbin1  flatParam
+qcd_fail_ggf_ptcat5_xbin3  flatParam
+qcd_fail_ggf_ptcat5_xbin2  flatParam
+qcd_fail_ggf_ptcat5_xbin9  flatParam
+qcd_fail_ggf_ptcat5_xbin8  flatParam
+qcd_fail_ggf_ptcat2_xbin21  flatParam
+qcd_fail_ggf_ptcat2_xbin20  flatParam
+qcd_fail_ggf_ptcat2_xbin23  flatParam
+qcd_fail_ggf_ptcat2_xbin22  flatParam
+qcd_fail_ggf_ptcat1_xbin19  flatParam
+qcd_fail_ggf_ptcat1_xbin18  flatParam
+qcd_fail_ggf_ptcat4_xbin23  flatParam
+qcd_fail_ggf_ptcat4_xbin22  flatParam
+qcd_fail_ggf_ptcat4_xbin21  flatParam
+qcd_fail_ggf_ptcat4_xbin20  flatParam
+qcd_fail_ggf_ptcat1_xbin11  flatParam
+qcd_fail_ggf_ptcat1_xbin10  flatParam
+qcd_fail_ggf_ptcat1_xbin13  flatParam
+qcd_fail_ggf_ptcat1_xbin12  flatParam
+qcd_fail_ggf_ptcat1_xbin15  flatParam
+qcd_fail_ggf_ptcat1_xbin14  flatParam
+qcd_fail_ggf_ptcat1_xbin17  flatParam
+qcd_fail_ggf_ptcat1_xbin16  flatParam
+qcd_fail_ggf_ptcat2_xbin10  flatParam
+qcd_fail_ggf_ptcat2_xbin11  flatParam
+qcd_fail_ggf_ptcat2_xbin12  flatParam
+qcd_fail_ggf_ptcat2_xbin13  flatParam
+qcd_fail_ggf_ptcat2_xbin14  flatParam
+qcd_fail_ggf_ptcat2_xbin15  flatParam
+qcd_fail_ggf_ptcat2_xbin16  flatParam
+qcd_fail_ggf_ptcat2_xbin17  flatParam
+qcd_fail_ggf_ptcat2_xbin18  flatParam
+qcd_fail_ggf_ptcat2_xbin19  flatParam
+qcd_fail_ggf_ptcat2_xbin6  flatParam
+qcd_fail_ggf_ptcat2_xbin7  flatParam
+qcd_fail_ggf_ptcat2_xbin4  flatParam
+qcd_fail_ggf_ptcat2_xbin5  flatParam
+qcd_fail_ggf_ptcat2_xbin2  flatParam
+qcd_fail_ggf_ptcat2_xbin3  flatParam
+qcd_fail_ggf_ptcat2_xbin1  flatParam
+qcd_fail_ggf_ptcat1_xbin20  flatParam
+qcd_fail_ggf_ptcat1_xbin21  flatParam
+qcd_fail_ggf_ptcat2_xbin8  flatParam
+qcd_fail_ggf_ptcat2_xbin9  flatParam
+qcd_fail_ggf_ptcat3_xbin9  flatParam
+qcd_fail_ggf_ptcat3_xbin8  flatParam
+qcd_fail_ggf_ptcat3_xbin7  flatParam
+qcd_fail_ggf_ptcat3_xbin6  flatParam
+qcd_fail_ggf_ptcat3_xbin5  flatParam
+qcd_fail_ggf_ptcat3_xbin4  flatParam
+qcd_fail_ggf_ptcat3_xbin3  flatParam
+qcd_fail_ggf_ptcat3_xbin2  flatParam
+qcd_fail_ggf_ptcat3_xbin1  flatParam
+qcd_fail_ggf_ptcat3_xbin22  flatParam
+qcd_fail_ggf_ptcat3_xbin23  flatParam
+qcd_fail_ggf_ptcat3_xbin20  flatParam
+qcd_fail_ggf_ptcat3_xbin21  flatParam
+poly_coeff_x0_y1_ggf  flatParam
+qcd_fail_ggf_ptcat6_xbin14  flatParam
+poly_coeff_x2_y1_ggf  flatParam
+qcd_fail_ggf_ptcat6_xbin15  flatParam
