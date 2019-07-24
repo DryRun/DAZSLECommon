@@ -8,8 +8,27 @@ import argparse
 import string
 import time
 timestamp = str(time.time()).replace(".","_")
-sys.path.insert(0, os.path.expandvars("$CMSSW_BASE/src/MyTools/RootUtils/scripts"))
-from csub_tar import make_tarball, get_tarball_path
+
+# Tarball paths and functions
+cmssw_base_pieces = os.path.expandvars("$CMSSW_BASE").split("/")
+tarball_name = "{}_{}".format(cmssw_base_pieces[-2], cmssw_base_pieces[-1])
+#cmssw_version = os.path.expandvars("$CMSSW_VERSION")
+tarball_directory = "/uscms/home/dryu/nobackup/tarballs"
+#tarball_directory = "/home/dryu/data/tarballs"
+
+def get_tarball_path(cmssw_src=False):
+	if cmssw_src:
+		return "{}/{}_src.tar.gz".format(tarball_directory, tarball_name)
+	else:
+		return "{}/{}.tar.gz".format(tarball_directory, tarball_name)
+
+def make_tarball(cmssw_src=False):
+	if cmssw_src:
+		tar_command = "tar -hczf {} -C $CMSSW_BASE/src . --exclude=*/test/crab --exclude=*/gen/crab --exclude=*/skim/crab --exclude=*/test/condor --exclude=*/.git*".format(get_tarball_path(True))
+	else:
+		tar_command = "tar -hczf {} -C $CMSSW_BASE . --exclude=*/test/crab --exclude=*/gen/crab --exclude=*/skim/crab --exclude=*/test/condor --exclude=*/.git*".format(get_tarball_path(False))
+	os.system(tar_command)
+
 
 parser = argparse.ArgumentParser(description = 'qsub-like interface to condor')
 parser.add_argument('script', type=str, help='Script to execute.')
@@ -42,22 +61,13 @@ files_to_transfer.append(args.script)
 
 cmssw_version = os.path.expandvars("$CMSSW_VERSION")
 
-data_directory = "/uscms/home/dryu/nobackup/"
-#data_directory = "/home/dryu/data/"
-
 if args.cmssw_src:
-	if not args.no_retar:
-		make_tarball(True)
-		#tar_command = "tar -hczf " + data_directory + "/" + cmssw_version + "_src.tar.gz -C $CMSSW_BASE/src . --exclude=*/test/crab --exclude=*/gen/crab --exclude=*/skim/crab --exclude=*/test/condor --exclude=*/.git*"
-		#os.system(tar_command)
-	files_to_transfer.append(get_tarball_path(True))
+	make_tarball(cmssw_src=True)
+	files_to_transfer.append(get_tarball_path(cmssw_src=True))
 
 if args.cmssw:
-	if not args.no_retar:
-		make_tarball(False)
-		#tar_command = "tar -hczf " + data_directory + "/" + cmssw_version + ".tar.gz -C $CMSSW_BASE . --exclude=*/test/crab --exclude=*/gen/crab --exclude=*/skim/crab --exclude=*/test/condor --exclude=*/.git*"
-		#os.system(tar_command)
-	files_to_transfer.append(get_tarball_path(False))
+	make_tarball(cmssw_src=False)
+	files_to_transfer.append(get_tarball_path(cmssw_src=False))
 
 if args.file_list:
 	file_list_txt = open(args.file_list)

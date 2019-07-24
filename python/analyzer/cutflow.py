@@ -77,7 +77,7 @@ class Cutflow:
 	### Cutflow methods ###
 	#######################
 	def print_cutflow(self):
-		print "[Cutflow::print_cutflow] INFO : Printing cut flow"
+		print "[Cutflow::print_cutflow] INFO : Printing cut flow {}".format(self._name)
 		print "[Cutflow::print_cutflow] INFO : \tInclusive => {}".format(self._pass_calls)
 		for cut_name in self._cut_list:
 			print "[Cutflow::print_cutflow] INFO : \t{} => {}".format(cut_name, self._pass_counter[cut_name])

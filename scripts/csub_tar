@@ -15,13 +15,11 @@ def get_tarball_path(cmssw_src=False):
 	else:
 		return "{}/{}.tar.gz".format(tarball_directory, tarball_name)
 
-def make_tarball(args):
-	if args.cmssw_src:
+def make_tarball(cmssw_src=False):
+	if cmssw_src:
 		tar_command = "tar -hczf {} -C $CMSSW_BASE/src . --exclude=*/test/crab --exclude=*/gen/crab --exclude=*/skim/crab --exclude=*/test/condor --exclude=*/.git*".format(get_tarball_path(True))
-	elif args.cmssw:
-		tar_command = "tar -hczf {} -C $CMSSW_BASE . --exclude=*/test/crab --exclude=*/gen/crab --exclude=*/skim/crab --exclude=*/test/condor --exclude=*/.git*".format(get_tarball_path(False))
 	else:
-		return
+		tar_command = "tar -hczf {} -C $CMSSW_BASE . --exclude=*/test/crab --exclude=*/gen/crab --exclude=*/skim/crab --exclude=*/test/condor --exclude=*/.git*".format(get_tarball_path(False))
 	os.system(tar_command)
 
 if __name__ == "__main__":
