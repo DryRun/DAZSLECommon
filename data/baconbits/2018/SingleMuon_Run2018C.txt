@@ -1,0 +1,7 @@
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/SingleMuonRun2018C_17Sep2018_v1_0.root
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/SingleMuonRun2018C_17Sep2018_v1_1.root
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/SingleMuonRun2018C_17Sep2018_v1_2.root
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/SingleMuonRun2018C_17Sep2018_v1_3.root
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/SingleMuonRun2018C_17Sep2018_v1_4.root
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/SingleMuonRun2018C_17Sep2018_v1_5.root
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/SingleMuonRun2018C_17Sep2018_v1_6.root

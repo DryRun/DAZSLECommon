@@ -1,0 +1,7 @@
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/DYJetsToLL_M_50_TuneCP5_13TeV_0.root 
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/DYJetsToLL_M_50_TuneCP5_13TeV_1.root 
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/DYJetsToLL_M_50_TuneCP5_13TeV_2.root 
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/DYJetsToLL_M_50_TuneCP5_13TeV_3.root 
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/DYJetsToLL_M_50_TuneCP5_13TeV_4.root 
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/DYJetsToLL_M_50_TuneCP5_13TeV_5.root 
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/DYJetsToLL_M_50_TuneCP5_13TeV_6.root

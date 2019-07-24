@@ -1,0 +1,1 @@
+root://cmseos.fnal.gov//eos/uscms/store/user/lpcbacon/dazsle/zprimebits-v15.02/skim/VBFHToBB_M_125_13TeV_powheg_pythia8_weightfix_0.root
